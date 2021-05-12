@@ -1,0 +1,22 @@
+{
+  "credentials": {
+    "tenantID": "<tenantID>",
+    "clientID": "<clientID>"
+  },
+  "metadata": {
+    "authority": "login.microsoftonline.com",
+    "discovery": ".well-known/openid-configuration",
+    "version": "v2.0"
+  },
+  "settings": {
+    "validateIssuer": false,
+    "passReqToCallback": false,
+    "loggingLevel": "info"
+  },
+  "protectedRoutes": {
+    "hello": {
+      "endpoint": "/hello",
+      "scopes": ["api://<clientID>/access_as_user"]
+    }
+  }
+}
